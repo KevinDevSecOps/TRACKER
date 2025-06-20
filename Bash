@@ -1,0 +1,5 @@
+# Crea la estructura base
+mkdir TraceX && cd TraceX
+git init
+touch README.md LICENSE .gitignore requirements.txt
+mkdir core docs tests
