@@ -1,0 +1,8 @@
+# Instalar en modo desarrollo
+pip install -e .
+
+# Uso básico
+tracerx example.com
+
+# Modo stealth
+tracerx example.com --stealth
