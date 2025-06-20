@@ -1,0 +1,11 @@
+# Nueva funcionalidad (opcional)
+if __name__ == "__main__":
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("target")
+    parser.add_argument("--geoip", action="store_true")
+    args = parser.parse_args()
+    
+    t = Tracker(args.target)
+    if args.geoip:
+        print(GeoIPLocator().locate(t.ip))
