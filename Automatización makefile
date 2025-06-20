@@ -1,0 +1,11 @@
+install:
+	pip install -e .
+
+test:
+	python -m pytest -v tests/
+
+run:
+	python tracex.py --target 127.0.0.1
+
+clean:
+	rm -rf __pycache__ *.log
